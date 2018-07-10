@@ -37,7 +37,7 @@ To get started, you will need to open a Terminal and:
 
 ## Pull Requests
 
-**Note:** Before opening a Pull Request, please run the tests and check they all pass and keep test coverage greater than or equal before.  
+**Note:** Before opening a Pull Request, please run the tests and check them all pass and keep test coverage greater than or equal before.  
 
 EasyReact uses [Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration). You may see mentions of [Travis CI](https://travis-ci.com/) in your PR and its comments. Travis is an external service we use that is automatically called on every PR, and runs the test cases on macOS and iPhone simulator to ensure every code change is stable.
 
