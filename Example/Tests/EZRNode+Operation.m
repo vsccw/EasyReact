@@ -989,6 +989,18 @@ describe(@"EZRNode", ^{
                 value.upstreamNodes.firstObject.mutablify.value = @"";
             }).to(raiseException().named(EZRNodeExceptionName).reason(EZRExceptionReason_MapEachNextValueNotTuple));
         });
+        
+        it(@"will get nil next value if given tuple count greater than 16", ^{
+            EZRMutableNode *nodeA = [EZRMutableNode value:@1];
+            EZRMutableNode *nodeB = [EZRMutableNode value:@1];
+            
+            EZRNode *node = [EZRCombine(nodeA, nodeB) mapEach:^id(id arg1, id arg2) {
+                return @([arg1 integerValue] + [arg2 integerValue]);
+            }];
+            
+            node.upstreamNodes.firstObject.mutablify.value = [EZTuple18 new];
+            expect(node.value).to(beNil());
+        });
     
         it(@"won't get a combined value until each upstream is not empty", ^{
             EZRMutableNode<NSNumber *> *value1 = [EZRMutableNode new];

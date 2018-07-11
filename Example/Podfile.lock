@@ -7,6 +7,9 @@ PODS:
   - EasySequence (1.3.0)
   - EasyTuple (1.1.2)
   - Nimble (7.1.3)
+  - OCHamcrest (7.1.1)
+  - OCMockito (5.1.0):
+    - OCHamcrest (~> 7.0)
   - Quick (1.3.0)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
@@ -20,6 +23,7 @@ PODS:
 DEPENDENCIES:
   - EasyReact (from `../`)
   - Nimble
+  - OCMockito
   - Quick
   - ReactiveCocoa (= 2.5)
   - RxSwift
@@ -30,6 +34,8 @@ SPEC REPOS:
     - EasySequence
     - EasyTuple
     - Nimble
+    - OCHamcrest
+    - OCMockito
     - Quick
     - ReactiveCocoa
     - RxSwift
@@ -44,10 +50,12 @@ SPEC CHECKSUMS:
   EasySequence: 1db9bb7b915052d3589d79c30ece1f0e160af550
   EasyTuple: a6a068ab3aa47e899a0c9f9ee23ddb394542ea9e
   Nimble: 2839b01d1b31f6a6a7777a221f0d91cf52e8e27b
+  OCHamcrest: 3506736397451c35d8763ff0a9b13492e544115f
+  OCMockito: f420d00dc5ffbb7452f9f499cd1766e6583d61a5
   Quick: 03278013f71aa05fe9ecabc94fbcc6835f1ee76f
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
 
-PODFILE CHECKSUM: fd1e19443b5466e1642b1f95f54d98dfcc5b6b58
+PODFILE CHECKSUM: 92df0fd88386f7546094a28366a9a9242e8fdb96
 
 COCOAPODS: 1.5.3

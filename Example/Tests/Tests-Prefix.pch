@@ -3,6 +3,7 @@
 #ifdef __OBJC__
 
 #import <EasyFoundation/EasyFoundation.h>
+#import <OCMockito/OCMockito.h>
 #import "TestKVOClass.h"
 #import "CustomMatchers.h"
 #import "EasyReact_Tests-Swift.h"

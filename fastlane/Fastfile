@@ -18,6 +18,7 @@ default_platform(:ios)
 platform :ios do
   desc "Tests and report"
   lane :test_and_report do
+    check_apache_header
     cocoapods(
       podfile: 'Example/Podfile',
       try_repo_update_on_error: true
@@ -31,11 +32,5 @@ platform :ios do
     )
     pod_lib_lint
     codecov
-  end
-  
-  lane :pod_trunk_push do
-    pod_push(
-      path: 'EasyReact.podspec'
-    )
   end
 end

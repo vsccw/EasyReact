@@ -14,7 +14,6 @@
  * limitations under the License.
  **/
 
-
 QuickSpecBegin(EZRListenContextSpec)
 
 describe(@"Listener", ^{
@@ -23,7 +22,7 @@ describe(@"Listener", ^{
         NSObject *listener = [NSObject new];
         __block NSNumber *value;
         __block id receiveContext;
-        [[testNode listenedBy:listener]  withContextBlock:^(NSNumber * _Nullable next, id _Nullable context) {
+        [[testNode listenedBy:listener] withContextBlock:^(NSNumber * _Nullable next, id _Nullable context) {
             value = next;
             receiveContext = context;
         }];
@@ -64,6 +63,27 @@ describe(@"Listener", ^{
         [testNode2 setValue:@2 context:@"2"];
         expect(value).to(equal(EZTuple(@1, @2)));
         expect(receiveContext).to(equal(@"2"));
+    });
+    
+    it(@"can receive on a given quque", ^{
+        EZRMutableNode<NSNumber *> *testNode = [EZRMutableNode new];
+        NSObject *listener = [NSObject new];
+        __block NSNumber *value;
+        __block id receiveContext;
+        __block BOOL onMainQueue = NO;
+        waitUntil(^(void (^done)(void)) {
+            [[testNode listenedBy:listener] withContextBlockOnMainQueue:^(NSNumber * _Nullable next, id _Nullable context) {
+                value = next;
+                receiveContext = context;
+                onMainQueue = [[NSThread currentThread] isMainThread];
+                done();
+            }];
+            [testNode setValue:@1 context:@"1"];
+        });
+        
+        expect(value).to(equal(@1));
+        expect(receiveContext).to(equal(@"1"));
+        expect(onMainQueue).to(beTrue());
     });
 });
 

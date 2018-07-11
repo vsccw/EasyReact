@@ -11,6 +11,7 @@
 		222515D21F287F2C00291583 /* CustomMatchers.m in Sources */ = {isa = PBXBuildFile; fileRef = 229EA1A61ED9E05000B458B7 /* CustomMatchers.m */; };
 		222515DA1F289A7600291583 /* receive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222515D81F28997700291583 /* receive.swift */; };
 		2233CD831ECDC8B700C9E016 /* TestKVOClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 22461FAE1ECAE48F008C3ED3 /* TestKVOClass.m */; };
+		22994F2120F499EB00587E34 /* EZRCancelableBagSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 22994F1F20F4990E00587E34 /* EZRCancelableBagSpec.m */; };
 		5A341A1FB3668AF88FC7EDFB /* Pods_EasyReact_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1D172FCD4CCC447B2169939 /* Pods_EasyReact_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -38,7 +39,7 @@
 		CE9497F11F73B5F70092D6F4 /* BenchmarkTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9497F01F73B5F70092D6F4 /* BenchmarkTest.m */; };
 		CE9497F61F73DB5F0092D6F4 /* BenchmarkCPUTestMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9497F51F73DB5F0092D6F4 /* BenchmarkCPUTestMethod.m */; };
 		CE9497FB1F73E23E0092D6F4 /* BenchmarkResult.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9497FA1F73E23E0092D6F4 /* BenchmarkResult.m */; };
-		CE9D3923208722FF00D7780D /* EZRListenContext.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D3922208722FF00D7780D /* EZRListenContext.m */; };
+		CE9D3923208722FF00D7780D /* EZRListenContextSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D3922208722FF00D7780D /* EZRListenContextSpec.m */; };
 		CE9D85CC207F5AA800CCAEF3 /* EZRNodeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* EZRNodeSpec.m */; };
 		CE9D85CD20804E0D00CCAEF3 /* EZRMutableNodeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3A0500207254AA00682095 /* EZRMutableNodeSpec.m */; };
 		CE9D85CE2080574C00CCAEF3 /* EZRNode+Operation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2221F3F91EC7933700897FAC /* EZRNode+Operation.m */; };
@@ -78,6 +79,7 @@
 		22461FAD1ECAE48F008C3ED3 /* TestKVOClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestKVOClass.h; sourceTree = "<group>"; };
 		22461FAE1ECAE48F008C3ED3 /* TestKVOClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestKVOClass.m; sourceTree = "<group>"; };
 		22461FB01ECAE4EA008C3ED3 /* NSObject+ER_Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSObject+ER_Extension.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		22994F1F20F4990E00587E34 /* EZRCancelableBagSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZRCancelableBagSpec.m; sourceTree = "<group>"; };
 		229EA1A51ED9E05000B458B7 /* CustomMatchers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomMatchers.h; sourceTree = "<group>"; };
 		229EA1A61ED9E05000B458B7 /* CustomMatchers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomMatchers.m; sourceTree = "<group>"; };
 		22FD9C221EF684B000312B97 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; lineEnding = 0; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.markdown; };
@@ -129,7 +131,7 @@
 		CE9497F91F73E23E0092D6F4 /* BenchmarkResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BenchmarkResult.h; sourceTree = "<group>"; };
 		CE9497FA1F73E23E0092D6F4 /* BenchmarkResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BenchmarkResult.m; sourceTree = "<group>"; };
 		CE9497FC1F74B6190092D6F4 /* EZRNode+Graph.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EZRNode+Graph.m"; sourceTree = "<group>"; };
-		CE9D3922208722FF00D7780D /* EZRListenContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZRListenContext.m; sourceTree = "<group>"; };
+		CE9D3922208722FF00D7780D /* EZRListenContextSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZRListenContextSpec.m; sourceTree = "<group>"; };
 		CEB23C3B1F6B7DBE009C29FB /* Benchmark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Benchmark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB23C3D1F6B7DBE009C29FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CEB23C3E1F6B7DBE009C29FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -302,7 +304,8 @@
 				22461FB01ECAE4EA008C3ED3 /* NSObject+ER_Extension.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 				CEBB9A1F207B132F00557A94 /* EZRNode+Value.m */,
-				CE9D3922208722FF00D7780D /* EZRListenContext.m */,
+				CE9D3922208722FF00D7780D /* EZRListenContextSpec.m */,
+				22994F1F20F4990E00587E34 /* EZRCancelableBagSpec.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -650,11 +653,15 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-EasyReact_Tests/Pods-EasyReact_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/OCHamcrest/OCHamcrest.framework",
+				"${BUILT_PRODUCTS_DIR}/OCMockito/OCMockito.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OCHamcrest.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OCMockito.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -686,8 +693,9 @@
 				222515D21F287F2C00291583 /* CustomMatchers.m in Sources */,
 				CE9D85CF208060E300CCAEF3 /* EZRNode+Value.m in Sources */,
 				2224F33B1F27768000C59BCD /* SwiftSpec.swift in Sources */,
+				22994F2120F499EB00587E34 /* EZRCancelableBagSpec.m in Sources */,
 				CE9D85CC207F5AA800CCAEF3 /* EZRNodeSpec.m in Sources */,
-				CE9D3923208722FF00D7780D /* EZRListenContext.m in Sources */,
+				CE9D3923208722FF00D7780D /* EZRListenContextSpec.m in Sources */,
 				DD80D46020805CED007D2754 /* EZRNode+Graph.m in Sources */,
 				2233CD831ECDC8B700C9E016 /* TestKVOClass.m in Sources */,
 				CE9D85CE2080574C00CCAEF3 /* EZRNode+Operation.m in Sources */,
